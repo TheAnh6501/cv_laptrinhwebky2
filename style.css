@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #ffe7b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 10000px;
+  min-height: 100px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.container .left_side {
+  position: relative;
+  background: #e8e4ab;
+  padding: 40px;
+}
+
+.container .right_side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.profile .prof-pic {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile .prof-pic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+}
+
+.profile h2 span {
+  font-size: 0.6em;
+  font-weight: 100px;
+}
+
+.contact {
+  padding-top: 40px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.contact ul {
+  position: relative;
+}
+
+.contact ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contact ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 16px;
+}
+
+.contact ul li span {
+  font-weight: 400;
+  /* font-size: 0.8rem; */
+}
+
+.contact.education li {
+  margin-bottom: 15px;
+}
+
+.contact.education h5 {
+  font-weight: 300;
+}
+
+.contact.education h4 {
+  font-weight: 500;
+}
+
+.contact.language .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #e8e4ab;
+  display: block;
+  margin-top: 5px;
+}
+
+.contact.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: gray;
+}
