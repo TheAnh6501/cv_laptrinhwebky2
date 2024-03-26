@@ -221,4 +221,13 @@ body {
   .about .box .text {
     margin: 0;
   }
+
+  .skill .box {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .skill .box .percent {
+    margin: 0;
+  }
 }
